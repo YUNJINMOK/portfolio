@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import App from "./App";
+
+import MainPage from "./Router/MainPage";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     element: <Outlet />,
     children: [
       {
-        path: "",
-        element: <App />,
+        path: "/",
+        element: <MainPage />,
       },
     ],
   },
