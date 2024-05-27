@@ -100,7 +100,7 @@ export default function Project() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative w-[40%] h-[300px] bg-white p-4 rounded-md shadow-sm"
+                  className="relative w-[40%] h-[280px] bg-white p-4 rounded-md shadow-sm"
                   style={{
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundSize: "cover",
@@ -124,7 +124,7 @@ export default function Project() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative w-[40%] h-[300px] bg-white p-4 rounded-md shadow-sm"
+                  className="relative w-[40%] h-[280px] bg-white p-4 rounded-md shadow-sm"
                   style={{
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundSize: "cover",
