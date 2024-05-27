@@ -5,6 +5,7 @@ import Header from "../Component/Header";
 import NavBar from "../Component/NavBar";
 import Skills from "../Component/Skills";
 import Project from "../Component/Project";
+import Footer from "../Component/Footer";
 
 export default function MainPage() {
   return (
@@ -14,6 +15,7 @@ export default function MainPage() {
       <About />
       <Skills />
       <Project />
+      <Footer />
     </div>
   );
 }
