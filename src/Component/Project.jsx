@@ -7,7 +7,7 @@ import teamProject2 from "../image/teamProject2.png";
 import teamProject3 from "../image/teamProject3.png";
 
 export default function Project() {
-  const [activeTab, setActiveTab] = useState(""); // 초기 상태를 빈 문자열로 설정
+  const [activeTab, setActiveTab] = useState("individual"); // 초기 상태를 빈 문자열로 설정
 
   // 개인 프로젝트 데이터
   const individualProjects = [
