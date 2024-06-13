@@ -14,7 +14,7 @@ export default function Project() {
     {
       id: 1,
       title: "Cocar",
-      description: "HTML, CSS, JavaScript를 사용해서 만들었습니다.",
+      description: "HTML, CSS, JavaScript를 사용",
       imageUrl: project1,
       link: "https://mellow-yeot-2bd0b6.netlify.app/",
     },
@@ -64,7 +64,7 @@ export default function Project() {
 
   return (
     <div
-      className="w-full h-screen flex justify-center bg-[#1E2022]"
+      className="w-full md:h-screen flex justify-center bg-[#1E2022]"
       id="project"
     >
       <div className="max-w-[1400px] w-full h-full flex flex-col items-center">
@@ -72,9 +72,9 @@ export default function Project() {
           Project
         </span>
         <div className="w-full h-full flex flex-col items-center ">
-          <div className="w-[50%] h-[80px] flex justify-between items-center gap-10">
+          <div className="w-[80%] h-[80px] flex justify-between items-center gap-10">
             <div
-              className={` w-[50%] text-2xl font-semibold cursor-pointer text-center ${
+              className={` w-full text-2xl font-semibold cursor-pointer text-center ${
                 activeTab === "individual" ? "text-red-300" : "text-white"
               }`}
               onClick={() => setActiveTab("individual")}
@@ -82,7 +82,7 @@ export default function Project() {
               개인 프로젝트
             </div>
             <div
-              className={`w-[50%] text-2xl font-semibold cursor-pointer text-center ${
+              className={`w-full text-2xl font-semibold cursor-pointer text-center ${
                 activeTab === "team" ? "text-red-300" : "text-white"
               }`}
               onClick={() => setActiveTab("team")}
@@ -100,7 +100,7 @@ export default function Project() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative w-[40%] h-[280px] bg-white p-4 rounded-md shadow-sm"
+                  className="relative md:w-[40%] w-[80%] h-[280px] bg-white p-4 rounded-md shadow-sm"
                   style={{
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundSize: "cover",
@@ -108,10 +108,10 @@ export default function Project() {
                   }}
                 >
                   <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-md flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <h2 className="text-4xl font-semibold mb-2 text-white shadow-sm">
+                    <h2 className="md:text-4xl text-2xl font-semibold mb-2 text-white shadow-sm">
                       {project.title}
                     </h2>
-                    <p className="text-white font-semibold text-2xl shadow-sm">
+                    <p className="text-white font-semibold md:text-2xl text-xl text-center shadow-sm">
                       {project.description}
                     </p>
                   </div>
@@ -124,7 +124,7 @@ export default function Project() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative w-[40%] h-[280px] bg-white p-4 rounded-md shadow-sm"
+                  className="relative md:w-[40%] w-[80%] h-[280px] bg-white p-4 rounded-md shadow-sm"
                   style={{
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundSize: "cover",
@@ -132,13 +132,13 @@ export default function Project() {
                   }}
                 >
                   <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-md flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <h2 className="text-4xl font-semibold mb-2 text-white">
+                    <h2 className="md:text-4xl sm:text-2xl font-semibold mb-2 text-white">
                       {project.title}
                     </h2>
-                    <p className="text-white font-semibold text-2xl">
+                    <p className="text-white font-semibold md:text-2xl text-xl text-center">
                       {project.description}
                     </p>
-                    <p className="text-white font-semibold text-2xl">
+                    <p className="text-white font-semibold md:text-2xl text-xl text-center">
                       {project.dev}
                     </p>
                   </div>
