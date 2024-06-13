@@ -29,8 +29,8 @@ export default function Skills() {
         <span className="w-full text-center text-5xl text-white font-semibold py-12 border-b-2 border-red-400">
           Skills
         </span>
-        <div className="w-full h-full flex justify-between items-center gap-6">
-          <div className="w-[33%] h-[300px]  rounded-lg flex-col items-center">
+        <div className="w-full h-full flex flex-col gap-6 md:flex-row justify-between items-center ">
+          <div className="md:w-[33%] w-[80%] h-[300px]  rounded-lg flex-col items-center p-2">
             <span className="w-full  text-3xl font-semibold text-white flex justify-center mb-4">
               Dev
             </span>
@@ -43,13 +43,13 @@ export default function Skills() {
               }}
             />
           </div>
-          <div className="w-[33%] h-[300px]  rounded-lg flex-col items-center">
+          <div className="md:w-[33%] w-[80%]  rounded-lg flex-col items-center">
             <span className="w-full  text-3xl font-semibold text-white flex justify-center mb-4">
               Design
             </span>
             <SkillBar skills={skills2} />
           </div>
-          <div className="w-[33%] h-[300px]  rounded-lg flex-col items-center">
+          <div className="md:w-[33%] w-[80%] rounded-lg flex-col items-center">
             <span className="w-full  text-3xl font-semibold text-white flex justify-center mb-4">
               Publisher
             </span>

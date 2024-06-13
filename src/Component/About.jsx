@@ -9,14 +9,14 @@ import { MdCastForEducation } from "react-icons/md";
 export default function About() {
   return (
     <div
-      className="w-full h-screen bg-[#1E2022] flex justify-center"
+      className="w-full lg:h-screen bg-[#1E2022] flex justify-center  "
       id="about"
     >
       <div className="max-w-7xl w-full h-full flex flex-col items-center">
         <span className=" w-full text-center text-5xl text-white font-semibold py-12 border-b-2 border-red-400 ">
           About
         </span>
-        <div className="w-full h-full flex flex-wrap items-center justify-around">
+        <div className="w-full h-full flex flex-wrap items-center justify-around gap-4 py-4">
           <AboutTextBox IconComponent={FaUser} title="이름" text="윤진목" />
           <AboutTextBox
             IconComponent={FaBirthdayCake}

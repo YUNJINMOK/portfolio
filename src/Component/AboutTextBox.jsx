@@ -8,7 +8,7 @@ export default function AboutTextBox({
   text3,
 }) {
   return (
-    <div className="w-[400px] h-[200px] bg-white rounded-lg flex justify-center">
+    <div className="md:w-[400px] w-[380px] h-[200px] bg-white rounded-lg flex justify-center p-2">
       <div className="w-[80%] h-full flex items-center">
         <IconComponent className="w-[35%] text-6xl " />
         <div className="w-[60%] h-full flex flex-col justify-center items-start gap-4">

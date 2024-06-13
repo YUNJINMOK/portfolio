@@ -71,10 +71,10 @@ export default function Project() {
         <span className="w-full text-center text-5xl text-white font-semibold py-12 border-b-2 border-red-500">
           Project
         </span>
-        <div className="w-full h-full flex flex-col items-center gap-4">
-          <div className="w-[50%] h-[80px] flex justify-around items-center">
+        <div className="w-full h-full flex flex-col items-center ">
+          <div className="w-[50%] h-[80px] flex justify-between items-center gap-10">
             <div
-              className={`text-3xl font-semibold cursor-pointer ${
+              className={` w-[50%] text-2xl font-semibold cursor-pointer text-center ${
                 activeTab === "individual" ? "text-red-300" : "text-white"
               }`}
               onClick={() => setActiveTab("individual")}
@@ -82,7 +82,7 @@ export default function Project() {
               개인 프로젝트
             </div>
             <div
-              className={`text-3xl font-semibold cursor-pointer ${
+              className={`w-[50%] text-2xl font-semibold cursor-pointer text-center ${
                 activeTab === "team" ? "text-red-300" : "text-white"
               }`}
               onClick={() => setActiveTab("team")}
